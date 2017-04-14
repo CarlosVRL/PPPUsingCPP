@@ -31,8 +31,8 @@
 #include "../lib/std_lib_facilities.h"
 
 /*
- * Note that the early exercises (Ch 1-5) can be completed
- * using an equivalent directive:
+ * Note that the early exercises (Ch 1-5) can also be completed
+ * by replacing the source line above with the equivalent:
  * 
  * #include<iostream>
  * #include<string>
@@ -46,6 +46,6 @@
 
 int main() {
     cout << "Hello, World!\n";	// Outputs string to standard output device
-    keep_window_open();			// Your guess is as good as mine
-    return 0;					// Standard successful return value
+    keep_window_open();		// Your guess is as good as mine
+    return 0;			// Standard successful return value
 }
