@@ -19,6 +19,6 @@ int main()
     
     // Do something with the input
     cout << "Hello, " << first_name << "!\n;";
-    
+
     return 0;
 }
