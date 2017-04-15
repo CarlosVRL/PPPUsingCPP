@@ -28,7 +28,7 @@
  * An early C++ program teaching #include and simple i/o
  */
 
-#include "../lib/std_lib_facilities.h"
+#include "../../lib/std_lib_facilities.h"
 
 /*
  * Note that the early exercises (Ch 1-5) can also be completed
