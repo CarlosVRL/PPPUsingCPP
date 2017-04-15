@@ -15,13 +15,15 @@ int main()
     string msg_prompt_name = 
             "Enter the name of the person you want to write to: ";
     string msg_greet_start =
-            "Dear ";
+            "\nDear ";
     string msg_greet_end =
             ",\n\n";
     string msg_intro =
-            "\tHow are you? I am fine. I miss you.\n";
+            "\tHow are you? I am fine. I miss you.\n\n";
+    string msg_prompt_other =
+            "Please enter another friend's name: ";
 
-    // Prompt user to enter first name
+    // Prompt user to enter recipient name
     cout << msg_prompt_name;
     string first_name;
     cin >> first_name;
@@ -31,6 +33,14 @@ int main()
     
     // Introductory message
     cout << msg_intro;
+    
+    // Prompter user to enter other name
+    cout << msg_prompt_other;
+    string friend_name;
+    cin >> friend_name;
+    
+    // Reference to other friend
+    cout << "\nHave you seen " << friend_name << " lately?\n";
     
     // Successful return
     return 0;
