@@ -1,25 +1,34 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   form-01.cpp
- * Author: Carlos
+ * Author: CarlosVRL
  *
  * Created on April 14, 2017, 11:01 PM
  */
 
-#include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
-
+int main()
+{
+    // Response messages
+    string msg_prompt_name = 
+            "Enter the name of the person you want to write to: ";
+    string msg_greet_start =
+            "Dear ";
+    string msg_greet_end =
+            ",\n\n";
+    
+    // Prompt user to enter first name
+    cout << msg_prompt_name;
+    string first_name;
+    cin >> first_name;
+    
+    // Greeting message
+    cout << msg_greet_start << first_name << msg_greet_end;
+    
+    
+    
     return 0;
 }
 
