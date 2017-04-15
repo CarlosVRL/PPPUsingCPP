@@ -18,8 +18,11 @@ int main()
             "Dear ";
     string msg_greet_end =
             ",\n\n";
+<<<<<<< HEAD
     string msg_intro =
             "\tHow are you? I am fine. I miss you.\n";
+=======
+>>>>>>> c143563c370d6c5f9f00c5b113463c800c0da9e6
     
     // Prompt user to enter first name
     cout << msg_prompt_name;
@@ -29,9 +32,14 @@ int main()
     // Greeting message
     cout << msg_greet_start << first_name << msg_greet_end;
     
+<<<<<<< HEAD
     // Introductory message
     cout << msg_intro;
     
     // Successful return
+=======
+    
+    
+>>>>>>> c143563c370d6c5f9f00c5b113463c800c0da9e6
     return 0;
 }
