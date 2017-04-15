@@ -18,6 +18,8 @@ int main()
             "Dear ";
     string msg_greet_end =
             ",\n\n";
+    string msg_intro =
+            "\tHow are you? I am fine. I miss you.\n";
     
     // Prompt user to enter first name
     cout << msg_prompt_name;
@@ -27,6 +29,10 @@ int main()
     // Greeting message
     cout << msg_greet_start << first_name << msg_greet_end;
     
+    // Introductory message
+    cout << msg_intro;
+    
+    // Successful return
     return 0;
 }
 
