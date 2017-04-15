@@ -61,6 +61,10 @@ int main()
             cout << "If you see " << friend_name << ", please ask THEM to call me.\n\n";
             break;
     }
+    
+    // Closing message
+    cout << "Yours sincerely, \n\nCV";
+    
     // Successful return
     return 0;
 }
