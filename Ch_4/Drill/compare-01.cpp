@@ -13,9 +13,8 @@ using namespace std;
 
 int main()
 {
-    // Task 2: Change the program to write out the smaller value is:
-    // followed by the smaller of the numbers and the larger value is:
-    // followed by the larger value
+    // Task 3: Augment the program so that it writes the line
+    // the numbers are almost equal after (only) if they are equal
     
     // Initialize empty array
     vector<int> numbers;
@@ -26,13 +25,13 @@ int main()
     // While loop conditional variable
     string go = "";
     
-    // Reads input until any non-integer is entered (|)
+    // Reads input until "|" is entered at repeat prompt
     while (go != "|")
     {
         // Read integer to vector
         cout << "Give me an int: ";
         cin >> temp;
-        numbers.push_back(temp); // use push back instead
+        numbers.push_back(temp);
         
         // Read another integer to vector
         cout << "Give me another int: ";
@@ -40,14 +39,20 @@ int main()
         numbers.push_back(temp);
         
         // Print both input integers to screen
-        cout << "You gave me: " << numbers[numbers.size()-2] << " and " << numbers.back() << endl;
+        cout << "You gave me: " << numbers[0] << " and " << numbers[1] << endl;
         
         // Sort the vector and print sorted
         sort(numbers.begin(),numbers.end());
         
         // Case: Values are relative
-        cout << "the smaller value us: " << numbers[0] << endl;
-        cout << "the larger value is: " << numbers[1] << endl;
+        if (numbers[0] == numbers[1])
+        {
+            cout << "the numbers are equal" << endl;
+        } else
+        {
+            cout << "the smaller value us: " << numbers[0] << endl;
+            cout << "the larger value is: " << numbers[1] << endl;
+        }
         
         // Clear vector for next loop
         numbers.clear();
