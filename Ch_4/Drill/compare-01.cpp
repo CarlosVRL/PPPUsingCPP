@@ -13,13 +13,6 @@ using namespace std;
 
 int main()
 {
-    /*
-     * Step 5: Change the program so that it writes out 'the numbers
-     * are almost equal" after writing out which is the larger and the
-     * smaller if the two numbers differ by less than 1.0/100
-     */
-    
-    
     // Initialize empty array
     vector<double> numbers;
     
