@@ -14,8 +14,9 @@ using namespace std;
 int main()
 {
     /*
-     * Step 4: Change the program so that it uses doubles instead
-     * of ints
+     * Step 5: Change the program so that it writes out 'the numbers
+     * are almost equal" after writing out which is the larger and the
+     * smaller if the two numbers differ by less than 1.0/100
      */
     
     
@@ -48,14 +49,19 @@ int main()
         sort(numbers.begin(),numbers.end());
         
         
-        if (numbers[0] == numbers[1]) // values are relative
+        if (numbers[0] == numbers[1]) // values are equal
         {
             cout << "the numbers are equal" << endl;
         }
-        else // values are equal
+        else // values are relative
         {
             cout << "the smaller value us: " << numbers[0] << endl;
             cout << "the larger value is: " << numbers[1] << endl;
+            
+            if ((numbers[1]-numbers[0])<(1.0/100))
+            {
+                cout << "the numbers are almost equal" << endl;
+            }
         }
         
         // Clear vector for next loop
