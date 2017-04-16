@@ -13,14 +13,17 @@ using namespace std;
 
 int main()
 {
-    // Task 3: Augment the program so that it writes the line
-    // the numbers are almost equal after (only) if they are equal
+    /*
+     * Step 4: Change the program so that it uses doubles instead
+     * of ints
+     */
+    
     
     // Initialize empty array
-    vector<int> numbers;
+    vector<double> numbers;
     
     // Temporary integer container (from input)
-    int temp;
+    double temp;
     
     // While loop conditional variable
     string go = "";
@@ -29,12 +32,12 @@ int main()
     while (go != "|")
     {
         // Read integer to vector
-        cout << "Give me an int: ";
+        cout << "Give me a double: ";
         cin >> temp;
         numbers.push_back(temp);
         
         // Read another integer to vector
-        cout << "Give me another int: ";
+        cout << "Give me another double: ";
         cin >> temp;
         numbers.push_back(temp);
         
@@ -44,11 +47,12 @@ int main()
         // Sort the vector and print sorted
         sort(numbers.begin(),numbers.end());
         
-        // Case: Values are relative
-        if (numbers[0] == numbers[1])
+        
+        if (numbers[0] == numbers[1]) // values are relative
         {
             cout << "the numbers are equal" << endl;
-        } else
+        }
+        else // values are equal
         {
             cout << "the smaller value us: " << numbers[0] << endl;
             cout << "the larger value is: " << numbers[1] << endl;
