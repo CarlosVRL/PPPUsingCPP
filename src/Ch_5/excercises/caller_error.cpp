@@ -1,7 +1,7 @@
 /**
  * From Section 5.5.1
  * 
- * An example of the caller dealing with run-time erros
+ * An example of the caller dealing with run-time errors
  */
 
 /**
