@@ -23,7 +23,6 @@ void error(string errmsg)
 
 int area(int a, int b)
 {
-    // area is logical to calculate
     return a * b;
 }
 
