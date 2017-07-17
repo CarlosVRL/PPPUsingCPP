@@ -50,6 +50,4 @@ int main()
         cout << y[i] << endl;
     
     return 0;
-    
-    // try the same wiht int* x = new int[4]...
 }
